@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.side-contain {
+    position: relative;
+    width: 300px;
+    flex-grow: 1;
+    background-image: url(./images/galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo-holder {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    /* background-color: #001741cb; */
+    /* opacity: 60%; */
+
+    font-family: 'Megrim', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: #fff;
+}
+
+svg {
+    width: 70px;
+    fill: #fff;
+}
+.logo-holder img {
+    width: 50px;
+}
+.logo-holder p {
+    margin: 1rem 0;
+}
+
+.main-contain {
+    width: 600px;
+    flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+    color: #001741;
+}
+
+/* Main Content */
+
+h1 {
+    padding: .4rem 2px .6rem 2px;
+    margin: 0;
+    font-family: 'Megrim', 'Times New Roman', Times, serif;
+}
+
+.main-content {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.main-content p {
+    max-width: 700px;
+    font-size: .85rem;
+}
+
+.form {
+    padding: 2.5rem 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 3px #d0d0d0;
+} 
+.form legend {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Megrim', 'Times New Roman', Times, serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 70px;
+    justify-content: flex-start;
+}
+.input-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+.input-holder input[type="text"],
+.input-holder input[type="email"],
+.input-holder input[type="tel"],
+.input-holder input[type="password"] {
+    width: 15rem;
+    padding: 7px 1rem;
+    border: none;
+    border-bottom: 1px solid #c8d8f8;
+    border-radius: 0px;
+}
+
+button[type="submit"] {
+    padding: 10px 40px;
+    background-color: #001741;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 3px 3px 5px #d0d0d0;
+}
+button[type="submit"]:hover {
+    background-color: #023ba7;
+    box-shadow: none;
+}
+
