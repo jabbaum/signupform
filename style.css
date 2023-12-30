@@ -6,13 +6,27 @@ body {
 
 .side-contain {
     position: relative;
-    width: 300px;
+    width: 200px;
     flex-grow: 1;
     background-image: url(./images/galaxy.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
+.side-contain .attribution {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .6rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 70%;
+}
+.side-contain .attribution a {
+    color: #e3e2e2;
+}
+
 .logo-holder {
     margin-top: 10rem;
     display: flex;
@@ -45,7 +59,7 @@ svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fafafa;
+    background-color: #f7f8f8;
     color: #001741;
 }
 
@@ -97,6 +111,15 @@ h1 {
     border: none;
     border-bottom: 1px solid #c8d8f8;
     border-radius: 0px;
+}
+.input-holder input[type="text"]:focus,
+.input-holder input[type="email"]:focus,
+.input-holder input[type="tel"]:focus,
+.input-holder input[type="password"]:focus {
+    outline: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #001741;
+    margin-bottom: -2px;
 }
 
 button[type="submit"] {
