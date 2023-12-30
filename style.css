@@ -112,6 +112,12 @@ h1 {
     border-bottom: 1px solid #c8d8f8;
     border-radius: 0px;
 }
+#pass2.invalid {
+    border-bottom: 1px solid red;
+}
+label>span {
+    color: red;
+}
 .input-holder input[type="text"]:focus,
 .input-holder input[type="email"]:focus,
 .input-holder input[type="tel"]:focus,

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
         </style> 
@@ -30,18 +31,18 @@
             <legend>Your Information</legend>
             <div class="form-row">
                 <div class="input-holder">
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" />
+                    <label aria-label="required" for="firstName">First Name*</label>
+                    <input required type="text" name="firstName" id="firstName" />
                 </div>
                 <div class="input-holder">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" />
+                    <label aria-label="required" for="lastName">Last Name*</label>
+                    <input required type="text" name="lastName" id="lastName" />
                 </div>
             </div>
             <div class="form-row">
                 <div class="input-holder">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" />
+                    <label aria-label="required" for="email">Email*</label>
+                    <input required type="email" name="email" id="email" />
                 </div>
                 <div class="input-holder">
                     <label for="phone">Phone Number</label>
@@ -50,12 +51,12 @@
             </div>
             <div class="form-row">
                 <div class="input-holder">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass" />
+                    <label aria-label="required" for="pass">Password*</label>
+                    <input required type="password" name="pass" id="pass" />
                 </div>
                 <div class="input-holder">
-                    <label for="pass2">Confirm Password</label>
-                    <input type="password" name="pass2" id="pass2" />
+                    <label aria-label="required" for="pass2">Confirm Password*<span class="error"></span></label>
+                    <input required type="password" name="pass2" id="pass2" />
                 </div>
             </div>
         </div>
