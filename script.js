@@ -1,5 +1,6 @@
 let pass1 = document.querySelector('#pass');
 let pass2 = document.querySelector('#pass2');
+const form = document.querySelector('.astroForm');
 
 function passMatch(origin, match) {
     let isValid = origin === match;
@@ -37,3 +38,12 @@ pass1.addEventListener("input", (e) => {
 
     passMatch(currentPass1, currentPass2);
 });
+
+form.addEventListener('submit', (e)=>{
+    let currentPass1 = pass1.value;
+    let currentPass2 = pass2.value;
+    if(!passMatch(currentPass1, currentPass2) || pass1.value.length <=5) {
+        e.preventDefault();
+    }
+});
+
