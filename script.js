@@ -1,6 +1,13 @@
 let pass1 = document.querySelector('#pass');
 let pass2 = document.querySelector('#pass2');
 
+function passMatch(origin, match) {
+    isValid = origin === match;
+    if(isValid) {
+        
+    }
+}
+
 pass2.addEventListener("input", (e)=>{
     let isValid = 0;
     let currentPass1 = pass1.value;

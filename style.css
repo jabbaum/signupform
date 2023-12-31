@@ -117,6 +117,7 @@ h1 {
 }
 label>span {
     color: red;
+    font-size: .65rem;
 }
 .input-holder input[type="text"]:focus,
 .input-holder input[type="email"]:focus,
