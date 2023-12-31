@@ -116,7 +116,7 @@ h1 {
 #pass.invalid {
     border-bottom: 1px solid red;
 }
-label>span {
+.error {
     color: red;
     font-size: .65rem;
 }
