@@ -112,7 +112,8 @@ h1 {
     border-bottom: 1px solid #c8d8f8;
     border-radius: 0px;
 }
-#pass2.invalid {
+#pass2.invalid,
+#pass.invalid {
     border-bottom: 1px solid red;
 }
 label>span {
